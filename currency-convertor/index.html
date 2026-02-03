@@ -3,9 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>hello world convertor</title>
+    <title>Currency Convertor Privacy Policy</title>
   </head>
   <body>
-    hello world convertor
+    <main>
+      <h1>Currency Convertor Privacy Policy</h1>
+      <p>Last updated: 2026-02-02</p>
+
+      <h2>Overview</h2>
+      <ul>
+        <li>This extension detects prices on web pages and shows inline currency conversions.</li>
+        <li>It does not collect or sell personal information.</li>
+      </ul>
+
+      <h2>Data we access</h2>
+      <ul>
+        <li>Page text around prices to detect amounts and currency codes. This processing happens locally in your browser and is not sent off device.</li>
+        <li>The active tab URL is read only to show and toggle the per-site enable/disable setting in the popup.</li>
+      </ul>
+
+      <h2>Data we store (locally on your device)</h2>
+      <ul>
+        <li>Selected target currencies.</li>
+        <li>Per-site enabled/disabled settings.</li>
+        <li>Cached exchange rates (stored for up to 1 hour).</li>
+      </ul>
+
+      <h2>Network requests</h2>
+      <ul>
+        <li>Exchange rates and currency names are fetched from <a href="https://api.frankfurter.app">https://api.frankfurter.app</a>.</li>
+        <li>Requests include only currency codes (base and target). We do not send page content, URLs, or user identifiers.</li>
+      </ul>
+
+      <h2>Data sharing</h2>
+      <ul>
+        <li>We do not share, sell, or rent user data.</li>
+      </ul>
+
+      <h2>Permissions use</h2>
+      <ul>
+        <li><strong>storage</strong>: Save user settings and cache exchange rates locally.</li>
+        <li><strong>activeTab</strong>: Read the current tab URL to display and toggle the "This site" setting.</li>
+        <li><strong>host permission</strong> <code>https://api.frankfurter.app/*</code>: Fetch exchange rates and currency names.</li>
+        <li><strong>content scripts</strong> on all sites: Detect and annotate prices on any website you visit.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>If you have questions, contact: <span>olehsmazhnov@proton.me</span></p>
+    </main>
   </body>
 </html>
