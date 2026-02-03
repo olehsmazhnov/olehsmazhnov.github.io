@@ -4,6 +4,245 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Currency Convertor Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #f2f5f4;
+        --surface: #ffffff;
+        --text: #1f2d2b;
+        --muted: #5b6f6a;
+        --accent: #3f7a6c;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: block;
+        padding: 48px 0;
+        font-family: "Source Serif 4", "Georgia", "Times New Roman", serif;
+        color: var(--text);
+        background: linear-gradient(135deg, #f2f5f4 0%, #e6efec 50%, #f6f8f7 100%);
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        width: 420px;
+        height: 420px;
+        background: radial-gradient(circle, rgba(63, 122, 108, 0.18) 0%, rgba(63, 122, 108, 0) 70%);
+        filter: blur(2px);
+        z-index: -1;
+        animation: drift 16s ease-in-out infinite;
+      }
+
+      body::before {
+        top: -120px;
+        left: -160px;
+      }
+
+      body::after {
+        bottom: -140px;
+        right: -180px;
+        animation-delay: -6s;
+      }
+
+      main {
+        width: min(720px, 92vw);
+        background: var(--surface);
+        padding: 32px 36px;
+        margin: 0 auto;
+        border-radius: 18px;
+        box-shadow: 0 16px 40px rgba(43, 66, 60, 0.12);
+        text-align: left;
+        position: relative;
+        z-index: 0;
+        animation: cardIn 0.9s ease both;
+        border: 1px solid rgba(63, 122, 108, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2rem;
+        color: var(--accent);
+        letter-spacing: 0.3px;
+      }
+
+      main > * {
+        opacity: 0;
+        transform: translateY(6px);
+        animation: fadeUp 0.7s ease forwards;
+      }
+
+      main > *:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+
+      main > *:nth-child(2) {
+        animation-delay: 0.18s;
+      }
+
+      main > *:nth-child(3) {
+        animation-delay: 0.26s;
+      }
+
+      main > *:nth-child(4) {
+        animation-delay: 0.34s;
+      }
+
+      main > *:nth-child(5) {
+        animation-delay: 0.42s;
+      }
+
+      main > *:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+
+      main > *:nth-child(7) {
+        animation-delay: 0.58s;
+      }
+
+      main > *:nth-child(8) {
+        animation-delay: 0.66s;
+      }
+
+      main > *:nth-child(9) {
+        animation-delay: 0.74s;
+      }
+
+      main > *:nth-child(10) {
+        animation-delay: 0.82s;
+      }
+
+      h2 {
+        margin: 24px 0 8px;
+        font-size: 1.2rem;
+        color: var(--text);
+      }
+
+      p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 8px;
+      }
+
+      li {
+        padding: 10px 14px;
+        background: #f6faf9;
+        border-radius: 12px;
+        color: var(--text);
+        border: 1px solid rgba(63, 122, 108, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        animation: listIn 0.6s ease both;
+      }
+
+      li:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+
+      li:nth-child(2) {
+        animation-delay: 0.18s;
+      }
+
+      li:nth-child(3) {
+        animation-delay: 0.26s;
+      }
+
+      li:nth-child(4) {
+        animation-delay: 0.34s;
+      }
+
+      li:nth-child(5) {
+        animation-delay: 0.42s;
+      }
+
+      li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 18px rgba(43, 66, 60, 0.12);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      code {
+        font-family: "JetBrains Mono", "Courier New", monospace;
+        font-size: 0.95em;
+        color: #2f5f55;
+      }
+
+      @keyframes cardIn {
+        from {
+          opacity: 0;
+          transform: translateY(12px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes listIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes drift {
+        0%,
+        100% {
+          transform: translateY(0) translateX(0);
+        }
+        50% {
+          transform: translateY(16px) translateX(12px);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
