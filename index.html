@@ -3,9 +3,2139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>hello world</title>
+    <meta
+      name="description"
+      content="Oleh S. portfolio: 10+ years building enterprise and business applications, web services, integrations, and games."
+    >
+    <meta
+      name="keywords"
+      content="Oleh S, software engineer, web developer, enterprise applications, React, Ionic, Haxe, OpenFL, Phaser, LibGDX, portfolio"
+    >
+    <meta name="author" content="Oleh S.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#3e87ff">
+    <link rel="canonical" href="https://olehsmazhnov.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oleh S. | Pixel Project Arcade">
+    <meta
+      property="og:description"
+      content="Portfolio of Oleh S. with enterprise apps, web services, integrations, and game projects."
+    >
+    <meta property="og:url" content="https://olehsmazhnov.github.io/">
+    <meta property="og:site_name" content="Oleh Pixel Hub">
+    <meta property="og:image" content="https://olehsmazhnov.github.io/assets/avatar-pixel.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oleh S. | Pixel Project Arcade">
+    <meta
+      name="twitter:description"
+      content="Portfolio of Oleh S. featuring enterprise software, web services, and game development."
+    >
+    <meta name="twitter:image" content="https://olehsmazhnov.github.io/assets/avatar-pixel.png">
+
+    <title>Oleh S. | Pixel Project Arcade</title>
+    <script>
+      (() => {
+        // Replace with your real GA4 Measurement ID, e.g. G-ABC123XYZ9
+        const GA_MEASUREMENT_ID = "G-7E35YFS43V";
+        if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === "G-7E35YFS43V") {
+          return;
+        }
+
+        const gaScript = document.createElement("script");
+        gaScript.async = true;
+        gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+        document.head.appendChild(gaScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_MEASUREMENT_ID, {
+          anonymize_ip: true
+        });
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Oleh S.",
+            "url": "https://olehsmazhnov.github.io/",
+            "sameAs": [
+              "https://github.com/olehsmazhnov",
+              "https://www.linkedin.com/in/oleh-s/"
+            ],
+            "jobTitle": "Software Engineer",
+            "knowsAbout": [
+              "Enterprise applications",
+              "Web services",
+              "React",
+              "Ionic",
+              "Haxe",
+              "OpenFL",
+              "Phaser",
+              "LibGDX"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Oleh Pixel Hub",
+            "url": "https://olehsmazhnov.github.io/"
+          }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        --ink: #10233f;
+        --sky-a: #87d4ff;
+        --sky-b: #3e87ff;
+        --night-a: #101d3f;
+        --night-b: #060d24;
+        --panel: rgba(239, 247, 255, 0.94);
+        --panel-strong: #ffffff;
+        --accent: #ffd147;
+        --mint: #77f3ab;
+        --blue: #5e86ff;
+        --rose: #ff8a8a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: "VT323", monospace;
+        color: var(--ink);
+        background: var(--night-b);
+        overflow-x: hidden;
+        cursor: url("assets/cursor-mouse.png") 0 0, auto;
+        opacity: 1;
+        transition: opacity 0.2s steps(2, end);
+      }
+
+      body.fonts-loading {
+        opacity: 0;
+      }
+
+      a,
+      button,
+      .btn,
+      .card a,
+      .top-links a,
+      #debug-bug,
+      [role="button"] {
+        cursor: url("assets/cursor-mouse-pointer.png") 0 0, pointer;
+      }
+
+      a:active,
+      button:active,
+      .btn:active,
+      .card a:active,
+      .top-links a:active,
+      #debug-bug:active,
+      [role="button"]:active {
+        cursor: url("assets/cursor-mouse-active.png") 0 0, pointer;
+      }
+
+      input,
+      textarea,
+      select,
+      [contenteditable="true"] {
+        cursor: url("assets/cursor-mouse-text.png") 16 16, text;
+      }
+
+      button:disabled,
+      [aria-disabled="true"],
+      .is-disabled {
+        cursor: url("assets/cursor-mouse-blocked.png") 16 16, not-allowed !important;
+      }
+
+      :focus {
+        outline: none;
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      .btn:focus-visible,
+      .card a:focus-visible,
+      .top-links a:focus-visible,
+      #debug-bug:focus-visible,
+      [role="button"]:focus-visible,
+      input:focus-visible,
+      textarea:focus-visible,
+      select:focus-visible,
+      [tabindex]:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 2px;
+        box-shadow:
+          0 0 0 2px #10233f,
+          0 0 0 5px rgba(255, 209, 71, 0.46);
+      }
+
+      .bg-scene {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        overflow: hidden;
+        background:
+          linear-gradient(
+            180deg,
+            var(--sky-a) 0%,
+            var(--sky-b) 40%,
+            var(--night-a) 64%,
+            var(--night-b) 100%
+          );
+      }
+
+      .stars {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        opacity: 0.9;
+        background-image:
+          radial-gradient(circle at 7% 14%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 16% 34%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 26% 8%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 31% 25%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 47% 18%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 62% 7%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 71% 22%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 83% 11%, #ffffff 0 1px, transparent 1px),
+          radial-gradient(circle at 92% 31%, #ffffff 0 1px, transparent 1px);
+        animation: twinkle 4.6s steps(2, end) infinite;
+      }
+
+      .stars::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.5;
+        background-image:
+          radial-gradient(circle at 12% 19%, #ffeaa7 0 1px, transparent 1px),
+          radial-gradient(circle at 38% 9%, #ffeaa7 0 1px, transparent 1px),
+          radial-gradient(circle at 52% 28%, #ffeaa7 0 1px, transparent 1px),
+          radial-gradient(circle at 66% 17%, #ffeaa7 0 1px, transparent 1px),
+          radial-gradient(circle at 79% 6%, #ffeaa7 0 1px, transparent 1px),
+          radial-gradient(circle at 95% 24%, #ffeaa7 0 1px, transparent 1px);
+        animation: twinkle 6.2s steps(2, end) infinite reverse;
+      }
+
+      .scan {
+        position: absolute;
+        inset: 0;
+        z-index: 9;
+        background:
+          repeating-linear-gradient(
+            180deg,
+            transparent 0,
+            transparent 7px,
+            rgba(255, 255, 255, 0.04) 7px,
+            rgba(255, 255, 255, 0.04) 8px
+          );
+        mix-blend-mode: soft-light;
+        animation: scanMove 9s linear infinite;
+      }
+
+      .sun {
+        position: absolute;
+        z-index: 1;
+        border: 4px solid #2d3857;
+        background:
+          repeating-linear-gradient(
+            180deg,
+            #ffe07f 0,
+            #ffe07f 11px,
+            #ffca55 11px,
+            #ffca55 22px
+          );
+        box-shadow: 0 0 0 6px rgba(255, 214, 120, 0.2);
+        animation: pulseSun 4s steps(2, end) infinite;
+      }
+
+      .sun-main {
+        top: 11%;
+        left: 76%;
+        width: 132px;
+        height: 132px;
+      }
+
+      .sun-echo {
+        top: 8%;
+        left: 66%;
+        width: 78px;
+        height: 78px;
+        opacity: 0.58;
+        animation: pulseSunEcho 6.4s steps(2, end) infinite;
+      }
+
+      .sun-mini {
+        top: 20%;
+        left: 86%;
+        width: 48px;
+        height: 48px;
+        opacity: 0.74;
+        animation: pulseSunEcho 5.1s steps(2, end) infinite reverse;
+      }
+
+      .sun-ring {
+        position: absolute;
+        top: 6%;
+        left: 63%;
+        width: 190px;
+        height: 190px;
+        z-index: 1;
+        border: 2px solid rgba(255, 222, 130, 0.38);
+        box-shadow: 0 0 0 2px rgba(255, 222, 130, 0.12);
+        animation: ringSpin 20s linear infinite;
+      }
+
+      .sun-ring.ring-two {
+        top: 3%;
+        left: 60%;
+        width: 230px;
+        height: 230px;
+        opacity: 0.58;
+        border-color: rgba(255, 222, 130, 0.25);
+        animation-duration: 29s;
+        animation-direction: reverse;
+      }
+
+      .hills {
+        position: absolute;
+        inset: auto -10% 0 -10%;
+        height: 35%;
+        z-index: 3;
+        background:
+          linear-gradient(#244581 0 0) 2% 44% / 22% 62% no-repeat,
+          linear-gradient(#1a376b 0 0) 15% 24% / 30% 78% no-repeat,
+          linear-gradient(#2b4d8d 0 0) 42% 42% / 24% 60% no-repeat,
+          linear-gradient(#16305e 0 0) 58% 18% / 36% 84% no-repeat,
+          linear-gradient(#203f78 0 0) 80% 40% / 24% 62% no-repeat,
+          linear-gradient(#12294d, #0b1d3a);
+        clip-path: polygon(
+          0 100%,
+          0 72%,
+          9% 58%,
+          20% 68%,
+          30% 50%,
+          42% 70%,
+          57% 48%,
+          68% 66%,
+          81% 54%,
+          92% 67%,
+          100% 62%,
+          100% 100%
+        );
+      }
+
+      .horizon-glow {
+        position: absolute;
+        inset: auto 0 29% 0;
+        height: 10%;
+        z-index: 1;
+        background:
+          radial-gradient(circle at 28% 45%, rgba(255, 145, 72, 0.3), transparent 52%),
+          radial-gradient(circle at 72% 40%, rgba(108, 158, 255, 0.35), transparent 56%),
+          linear-gradient(180deg, rgba(248, 141, 97, 0.24), rgba(88, 110, 198, 0));
+        animation: horizonPulse 7s ease-in-out infinite;
+      }
+
+      .neon-road {
+        position: absolute;
+        inset: auto -12% 17% -12%;
+        height: 18%;
+        z-index: 2;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            rgba(110, 173, 255, 0.16) 0,
+            rgba(110, 173, 255, 0.16) 2px,
+            transparent 2px,
+            transparent 22px
+          ),
+          linear-gradient(180deg, rgba(48, 76, 152, 0.14), rgba(18, 31, 69, 0.44));
+        clip-path: polygon(2% 100%, 17% 12%, 83% 12%, 98% 100%);
+        transform-origin: center bottom;
+        animation: roadFlow 8s linear infinite;
+      }
+
+      .cityline {
+        position: absolute;
+        inset: auto -6% 22% -6%;
+        z-index: 2;
+        height: 14%;
+      }
+
+      .cityline.back {
+        opacity: 0.5;
+        background:
+          linear-gradient(#121e44 0 0) 0% 38% / 8% 62% no-repeat,
+          linear-gradient(#101a3d 0 0) 8% 18% / 7% 82% no-repeat,
+          linear-gradient(#162650 0 0) 16% 50% / 6% 50% no-repeat,
+          linear-gradient(#122146 0 0) 23% 28% / 9% 72% no-repeat,
+          linear-gradient(#162a58 0 0) 32% 42% / 8% 58% no-repeat,
+          linear-gradient(#0f1a39 0 0) 40% 10% / 12% 90% no-repeat,
+          linear-gradient(#122247 0 0) 53% 46% / 7% 54% no-repeat,
+          linear-gradient(#162653 0 0) 60% 20% / 10% 80% no-repeat,
+          linear-gradient(#0e1a3a 0 0) 71% 35% / 9% 65% no-repeat,
+          linear-gradient(#14234b 0 0) 80% 12% / 10% 88% no-repeat,
+          linear-gradient(#101d41 0 0) 91% 48% / 9% 52% no-repeat;
+        animation: cityShift 55s linear infinite;
+      }
+
+      .cityline.front {
+        z-index: 4;
+        opacity: 0.76;
+        inset: auto -3% 19% -3%;
+        height: 10%;
+        background:
+          linear-gradient(#1a2c61 0 0) 1% 45% / 6% 55% no-repeat,
+          linear-gradient(#1a2d64 0 0) 8% 16% / 8% 84% no-repeat,
+          linear-gradient(#18305e 0 0) 17% 40% / 8% 60% no-repeat,
+          linear-gradient(#223a76 0 0) 26% 24% / 7% 76% no-repeat,
+          linear-gradient(#21386f 0 0) 35% 30% / 9% 70% no-repeat,
+          linear-gradient(#1d3264 0 0) 45% 12% / 10% 88% no-repeat,
+          linear-gradient(#22386f 0 0) 56% 43% / 8% 57% no-repeat,
+          linear-gradient(#24417f 0 0) 65% 18% / 9% 82% no-repeat,
+          linear-gradient(#1a2f62 0 0) 75% 34% / 8% 66% no-repeat,
+          linear-gradient(#263f7a 0 0) 84% 20% / 8% 80% no-repeat,
+          linear-gradient(#1b3164 0 0) 93% 44% / 7% 56% no-repeat;
+      }
+
+      .cityline.front::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(rgba(255, 211, 122, 0.62) 0 0) 9% 43% / 1.6% 10% no-repeat,
+          linear-gradient(rgba(255, 211, 122, 0.62) 0 0) 13% 58% / 1.4% 8% no-repeat,
+          linear-gradient(rgba(121, 202, 255, 0.58) 0 0) 28% 52% / 1.5% 8% no-repeat,
+          linear-gradient(rgba(255, 211, 122, 0.62) 0 0) 39% 44% / 1.4% 9% no-repeat,
+          linear-gradient(rgba(121, 202, 255, 0.58) 0 0) 49% 62% / 1.6% 7% no-repeat,
+          linear-gradient(rgba(255, 211, 122, 0.62) 0 0) 67% 47% / 1.5% 9% no-repeat,
+          linear-gradient(rgba(121, 202, 255, 0.58) 0 0) 86% 56% / 1.3% 7% no-repeat,
+          linear-gradient(rgba(255, 211, 122, 0.62) 0 0) 95% 52% / 1.2% 8% no-repeat;
+        animation: windowBlink 3.8s steps(2, end) infinite;
+      }
+
+      .car-lane {
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        height: 46px;
+        z-index: 4;
+        pointer-events: none;
+      }
+
+      .car-lane.upper {
+        bottom: 25%;
+      }
+
+      .car-lane.lower {
+        bottom: 20%;
+      }
+
+      .car {
+        position: absolute;
+        width: 48px;
+        height: 20px;
+        border: 3px solid #101e3d;
+        background: var(--car-body, #ff8a8a);
+        box-shadow: 0 3px 0 rgba(9, 17, 35, 0.35);
+        image-rendering: pixelated;
+      }
+
+      .car::before {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: -8px;
+        width: 26px;
+        height: 8px;
+        border: 3px solid #101e3d;
+        background: var(--car-top, #ffd147);
+      }
+
+      .car::after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        bottom: -6px;
+        width: 36px;
+        height: 6px;
+        background:
+          linear-gradient(#101e3d 0 0) 0 0 / 6px 6px no-repeat,
+          linear-gradient(#101e3d 0 0) 14px 0 / 6px 6px no-repeat,
+          linear-gradient(#101e3d 0 0) 28px 0 / 6px 6px no-repeat;
+      }
+
+      .car.right {
+        animation: carRight var(--dur, 16s) linear infinite;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .car.left {
+        animation: carLeft var(--dur, 18s) linear infinite;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .fog {
+        position: absolute;
+        inset: auto -18% 13% -18%;
+        height: 13%;
+        z-index: 5;
+        background:
+          radial-gradient(circle at 25% 52%, rgba(241, 242, 246, 0.24), transparent 45%),
+          radial-gradient(circle at 52% 42%, rgba(241, 242, 246, 0.22), transparent 48%),
+          radial-gradient(circle at 77% 55%, rgba(241, 242, 246, 0.2), transparent 46%);
+        filter: blur(1px);
+        animation: fogRoll 22s linear infinite;
+      }
+
+      .fog.two {
+        inset: auto -22% 10% -22%;
+        opacity: 0.62;
+        animation-duration: 31s;
+        animation-direction: reverse;
+      }
+
+      .dust-layer {
+        position: absolute;
+        inset: 0;
+        z-index: 6;
+      }
+
+      .dust-layer span {
+        position: absolute;
+        left: var(--left);
+        bottom: 16%;
+        width: var(--size);
+        height: var(--size);
+        border: 1px solid rgba(241, 214, 141, 0.25);
+        background: rgba(241, 214, 141, 0.16);
+        animation: dustDrift var(--dur) linear infinite;
+        animation-delay: var(--delay);
+      }
+
+      .raven {
+        position: absolute;
+        top: var(--top);
+        left: -8%;
+        width: 18px;
+        height: 8px;
+        z-index: 6;
+        opacity: 0.76;
+        animation: ravenFly var(--dur) linear infinite;
+        animation-delay: var(--delay);
+      }
+
+      .raven.far {
+        opacity: 0.5;
+      }
+
+      .raven.extra {
+        opacity: 0.68;
+      }
+
+      .raven::before,
+      .raven::after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        width: 9px;
+        height: 5px;
+        border-top: 2px solid rgba(10, 18, 44, 0.72);
+        border-radius: 100% 100% 0 0;
+      }
+
+      .raven::before {
+        left: 0;
+        transform-origin: right center;
+        animation: wingLeft var(--flap, 0.34s) steps(2, end) infinite;
+      }
+
+      .raven::after {
+        right: 0;
+        transform-origin: left center;
+        animation: wingRight var(--flap, 0.34s) steps(2, end) infinite;
+      }
+
+      .cloud {
+        position: absolute;
+        z-index: 2;
+        width: 120px;
+        height: 56px;
+        background:
+          linear-gradient(#ecf7ff 0 0) 18px 12px / 34px 12px no-repeat,
+          linear-gradient(#ecf7ff 0 0) 40px 4px / 34px 12px no-repeat,
+          linear-gradient(#ecf7ff 0 0) 58px 10px / 36px 12px no-repeat,
+          linear-gradient(#ecf7ff 0 0) 10px 24px / 90px 16px no-repeat,
+          linear-gradient(#d0e7ff 0 0) 20px 40px / 74px 10px no-repeat;
+        filter: drop-shadow(0 2px 0 rgba(11, 29, 58, 0.25));
+        opacity: 0.66;
+      }
+
+      .c1 {
+        top: 14%;
+        left: -16%;
+        animation: cloudRun 48s linear infinite;
+      }
+
+      .c2 {
+        top: 20%;
+        left: -28%;
+        --cloud-scale: 1.15;
+        animation: cloudRun 62s linear infinite -17s;
+      }
+
+      .c3 {
+        top: 28%;
+        left: -20%;
+        --cloud-scale: 0.9;
+        animation: cloudRun 58s linear infinite -8s;
+      }
+
+      .c4 {
+        top: 8%;
+        left: -30%;
+        --cloud-scale: 0.72;
+        animation: cloudRun 74s linear infinite -28s;
+      }
+
+      .c5 {
+        top: 33%;
+        left: -25%;
+        --cloud-scale: 1.05;
+        animation: cloudRun 66s linear infinite -33s;
+      }
+
+      .comet {
+        position: absolute;
+        z-index: 2;
+        width: 120px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--comet-head, #fff7cc), rgba(255, 255, 255, 0));
+        box-shadow: 0 0 8px var(--comet-glow, rgba(255, 245, 178, 0.7));
+        transform: rotate(-24deg);
+        opacity: 0;
+      }
+
+      .comet.one {
+        --comet-head: #ffe49a;
+        --comet-glow: rgba(255, 228, 157, 0.78);
+        top: 18%;
+        left: 108%;
+        animation: cometFly 8s linear infinite 1s;
+      }
+
+      .comet.two {
+        --comet-head: #9be3ff;
+        --comet-glow: rgba(146, 224, 255, 0.82);
+        top: 30%;
+        left: 112%;
+        animation: cometFly 9.4s linear infinite 4.8s;
+      }
+
+      .comet.three {
+        --comet-head: #ffafd7;
+        --comet-glow: rgba(255, 165, 206, 0.8);
+        top: 12%;
+        left: 106%;
+        animation: cometFly 7.2s linear infinite 2.8s;
+      }
+
+      .plane {
+        position: absolute;
+        top: var(--top);
+        left: -20%;
+        width: calc(20 * var(--px, 3px));
+        height: calc(11 * var(--px, 3px));
+        z-index: 5;
+        opacity: 0.88;
+        --plane-black: #060913;
+        --plane-main: #f4f7fb;
+        --plane-window: #8ec3f6;
+        --plane-red: #d12e33;
+        --plane-engine: #3d444d;
+        filter: drop-shadow(0 2px 0 rgba(11, 29, 58, 0.3));
+        transform-origin: top left;
+      }
+
+      .plane::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: var(--px, 3px);
+        height: var(--px, 3px);
+        background: var(--plane-black);
+        box-shadow:
+          calc(0 * var(--px, 3px)) calc(1 * var(--px, 3px)) var(--plane-black),
+          calc(0 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(1 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-red),
+          calc(2 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-red),
+          calc(3 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(4 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(5 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(6 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(7 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(8 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(9 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(10 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(11 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(12 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(13 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(14 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(15 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(16 * var(--px, 3px)) calc(2 * var(--px, 3px)) var(--plane-black),
+          calc(0 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-black),
+          calc(1 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(2 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(3 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(4 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(5 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(6 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-window),
+          calc(7 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(8 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-window),
+          calc(9 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(10 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-window),
+          calc(11 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(12 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-window),
+          calc(13 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(14 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-main),
+          calc(15 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-window),
+          calc(16 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-black),
+          calc(17 * var(--px, 3px)) calc(3 * var(--px, 3px)) var(--plane-black),
+          calc(0 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-black),
+          calc(1 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(2 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(3 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(4 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(5 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(6 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(7 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(8 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(9 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(10 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(11 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(12 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(13 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(14 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(15 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(16 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-main),
+          calc(17 * var(--px, 3px)) calc(4 * var(--px, 3px)) var(--plane-black),
+          calc(0 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(1 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(2 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(3 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(4 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(5 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(6 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-main),
+          calc(7 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-main),
+          calc(8 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-main),
+          calc(9 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(10 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(11 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(12 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(13 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(14 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(15 * var(--px, 3px)) calc(5 * var(--px, 3px)) var(--plane-black),
+          calc(3 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-black),
+          calc(4 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-main),
+          calc(5 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-main),
+          calc(6 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-main),
+          calc(7 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-main),
+          calc(8 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-main),
+          calc(9 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-black),
+          calc(10 * var(--px, 3px)) calc(6 * var(--px, 3px)) var(--plane-black),
+          calc(2 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-black),
+          calc(3 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-red),
+          calc(4 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-red),
+          calc(5 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-red),
+          calc(6 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-black),
+          calc(7 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-black),
+          calc(8 * var(--px, 3px)) calc(7 * var(--px, 3px)) var(--plane-engine),
+          calc(3 * var(--px, 3px)) calc(8 * var(--px, 3px)) var(--plane-black),
+          calc(4 * var(--px, 3px)) calc(8 * var(--px, 3px)) var(--plane-black),
+          calc(5 * var(--px, 3px)) calc(8 * var(--px, 3px)) var(--plane-black);
+      }
+
+      .plane.right {
+        --plane-dir: 1;
+        animation: planeRight var(--dur, 30s) linear infinite;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .plane.left {
+        --plane-dir: -1;
+        animation: planeLeft var(--dur, 33s) linear infinite;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .plane.far {
+        opacity: 0.58;
+      }
+
+      .plane.extra {
+        opacity: 0.92;
+      }
+
+      .ufo {
+        position: absolute;
+        top: var(--top);
+        left: -24%;
+        width: calc(18 * var(--upx, 3px));
+        height: calc(12 * var(--upx, 3px));
+        z-index: 6;
+        opacity: 0.9;
+        --ufo-black: #060913;
+        --ufo-cyan: #67dbff;
+        --ufo-cyan-hi: #c7f4ff;
+        --ufo-blue: #4eb9ff;
+        --ufo-violet: #7e49f1;
+        --ufo-magenta: #be48ff;
+        --ufo-pink: #ff7bec;
+        filter: drop-shadow(0 2px 0 rgba(11, 29, 58, 0.35));
+        transform-origin: top left;
+      }
+
+      .ufo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: var(--upx, 3px);
+        height: var(--upx, 3px);
+        background: var(--ufo-black);
+        box-shadow:
+          calc(7 * var(--upx, 3px)) calc(0 * var(--upx, 3px)) var(--ufo-black),
+          calc(8 * var(--upx, 3px)) calc(0 * var(--upx, 3px)) var(--ufo-black),
+          calc(9 * var(--upx, 3px)) calc(0 * var(--upx, 3px)) var(--ufo-black),
+          calc(10 * var(--upx, 3px)) calc(0 * var(--upx, 3px)) var(--ufo-black),
+          calc(6 * var(--upx, 3px)) calc(1 * var(--upx, 3px)) var(--ufo-black),
+          calc(7 * var(--upx, 3px)) calc(1 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(8 * var(--upx, 3px)) calc(1 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(9 * var(--upx, 3px)) calc(1 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(10 * var(--upx, 3px)) calc(1 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(11 * var(--upx, 3px)) calc(1 * var(--upx, 3px)) var(--ufo-black),
+          calc(5 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-black),
+          calc(6 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(7 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-cyan-hi),
+          calc(8 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-blue),
+          calc(9 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-blue),
+          calc(10 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-cyan-hi),
+          calc(11 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(12 * var(--upx, 3px)) calc(2 * var(--upx, 3px)) var(--ufo-black),
+          calc(4 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-black),
+          calc(5 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(6 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-cyan-hi),
+          calc(7 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-blue),
+          calc(8 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-violet),
+          calc(9 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-magenta),
+          calc(10 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-blue),
+          calc(11 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-cyan-hi),
+          calc(12 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-cyan),
+          calc(13 * var(--upx, 3px)) calc(3 * var(--upx, 3px)) var(--ufo-black),
+          calc(3 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-black),
+          calc(4 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(5 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(6 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(7 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(8 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(9 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(10 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(11 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(12 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(13 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-violet),
+          calc(14 * var(--upx, 3px)) calc(4 * var(--upx, 3px)) var(--ufo-black),
+          calc(2 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-black),
+          calc(3 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(4 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(5 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(6 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(7 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(8 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(9 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(10 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(11 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(12 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(13 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(14 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-violet),
+          calc(15 * var(--upx, 3px)) calc(5 * var(--upx, 3px)) var(--ufo-black),
+          calc(4 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-black),
+          calc(5 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-pink),
+          calc(6 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-black),
+          calc(8 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-black),
+          calc(9 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-pink),
+          calc(10 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-black),
+          calc(12 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-black),
+          calc(13 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-pink),
+          calc(14 * var(--upx, 3px)) calc(6 * var(--upx, 3px)) var(--ufo-black),
+          calc(4 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-black),
+          calc(5 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-pink),
+          calc(6 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-black),
+          calc(8 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-black),
+          calc(9 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-pink),
+          calc(10 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-black),
+          calc(12 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-black),
+          calc(13 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-pink),
+          calc(14 * var(--upx, 3px)) calc(7 * var(--upx, 3px)) var(--ufo-black);
+      }
+
+      .ufo::after {
+        content: "";
+        position: absolute;
+        left: calc(3 * var(--upx, 3px));
+        top: calc(5 * var(--upx, 3px));
+        width: var(--upx, 3px);
+        height: var(--upx, 3px);
+        background: #9af7ff;
+        box-shadow:
+          calc(3 * var(--upx, 3px)) 0 #9af7ff,
+          calc(6 * var(--upx, 3px)) 0 #9af7ff,
+          calc(9 * var(--upx, 3px)) 0 #9af7ff,
+          calc(12 * var(--upx, 3px)) 0 #9af7ff;
+        animation: ufoBlink 0.9s steps(2, end) infinite;
+      }
+
+      .ufo.right {
+        --ufo-dir: 1;
+        animation: ufoRight var(--dur, 44s) linear infinite;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .ufo.left {
+        --ufo-dir: -1;
+        animation: ufoLeft var(--dur, 48s) linear infinite;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .ufo.far {
+        opacity: 0.6;
+      }
+
+      .pixel-float {
+        position: absolute;
+        inset: 0;
+        z-index: 4;
+      }
+
+      .pixel-float span {
+        position: absolute;
+        bottom: -20px;
+        left: var(--left);
+        width: var(--size);
+        height: var(--size);
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        background: rgba(173, 227, 255, 0.14);
+        animation: rise var(--dur) linear infinite;
+        animation-delay: var(--delay);
+      }
+
+      .page {
+        position: relative;
+        z-index: 2;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 24px 16px 32px;
+      }
+
+      .pixel-panel {
+        background: var(--panel);
+        border: 4px solid var(--ink);
+        box-shadow: 8px 8px 0 rgba(17, 32, 58, 0.35);
+        backdrop-filter: blur(2px);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 14px;
+      }
+
+      .logo {
+        font-family: "Press Start 2P", monospace;
+        font-size: 11px;
+        color: #264a7a;
+      }
+
+      .top-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 24px;
+      }
+
+      .top-links a {
+        text-decoration: none;
+        color: var(--ink);
+        border: 3px solid var(--ink);
+        padding: 2px 8px;
+        background: #ffffff;
+      }
+
+      .top-links a:hover {
+        background: var(--accent);
+        transform: translateY(-2px);
+      }
+
+      .hero {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 16px;
+        align-items: stretch;
+      }
+
+      .hero-copy {
+        padding: 18px 16px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Press Start 2P", monospace;
+      }
+
+      h1 {
+        line-height: 1.5;
+        font-size: clamp(16px, 2.5vw, 24px);
+      }
+
+      .subtitle {
+        margin: 14px 0 18px;
+        font-size: 32px;
+        line-height: 1.15;
+      }
+
+      .profile-strip {
+        margin-bottom: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        border: 3px solid var(--ink);
+        background: var(--panel-strong);
+        padding: 4px 8px;
+        font-size: 22px;
+      }
+
+      .chip a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .btn-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .btn {
+        font-family: "Press Start 2P", monospace;
+        font-size: 11px;
+        text-decoration: none;
+        border: 4px solid var(--ink);
+        color: var(--ink);
+        padding: 11px 12px 9px;
+        display: inline-block;
+        transition: transform 0.08s ease;
+      }
+
+      .btn-primary {
+        background: var(--mint);
+      }
+
+      .btn-secondary {
+        background: #ffffff;
+      }
+
+      .btn:hover {
+        transform: translate(-2px, -2px);
+      }
+
+      .hero-art {
+        position: relative;
+        overflow: hidden;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:
+          radial-gradient(circle at 24% 18%, #ffffff 0 8%, transparent 8%),
+          radial-gradient(circle at 74% 28%, #ffffff 0 6%, transparent 6%),
+          linear-gradient(180deg, #8fdbff, #4f8fff);
+      }
+
+      .avatar {
+        width: min(220px, 70%);
+        aspect-ratio: 1;
+        position: relative;
+        animation: bob 1.8s infinite steps(2, end);
+        z-index: 2;
+        border: 4px solid #11203a;
+        box-shadow: 6px 6px 0 rgba(16, 35, 63, 0.42);
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        object-fit: cover;
+        background: #0f2240;
+      }
+
+      .projects {
+        margin-top: 24px;
+        padding: 16px;
+      }
+
+      .projects-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+
+      h2 {
+        font-size: clamp(12px, 2.5vw, 16px);
+      }
+
+      .projects-head p {
+        margin: 0;
+        font-size: 26px;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .card {
+        border: 4px solid var(--ink);
+        background: #ffffff;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        transition: transform 0.12s ease;
+      }
+
+      .card:hover {
+        transform: translate(-3px, -3px);
+      }
+
+      .card-banner {
+        height: 84px;
+        border: 4px solid var(--ink);
+        image-rendering: pixelated;
+      }
+
+      .banner-1 {
+        background:
+          linear-gradient(0deg, #51c2ff 0 30%, #99e8ff 30% 100%),
+          repeating-linear-gradient(90deg, #2764b2 0 10px, #3f7fd2 10px 20px);
+      }
+
+      .banner-2 {
+        background:
+          repeating-linear-gradient(45deg, #ffcb77 0 10px, #ff9f6e 10px 20px),
+          linear-gradient(180deg, #ffd27b, #ff7f7f);
+      }
+
+      .banner-3 {
+        background:
+          repeating-linear-gradient(90deg, #8ef7ab 0 12px, #5fd08b 12px 24px),
+          linear-gradient(180deg, #c0ffd4, #5fd08b);
+      }
+
+      .banner-4 {
+        background:
+          repeating-linear-gradient(90deg, #b4b9ff 0 12px, #8188ff 12px 24px),
+          linear-gradient(180deg, #dae0ff, #8188ff);
+      }
+
+      h3 {
+        font-size: 13px;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.05;
+      }
+
+      .card a {
+        width: fit-content;
+        text-decoration: none;
+        color: var(--ink);
+        border: 3px solid var(--ink);
+        background: var(--accent);
+        padding: 4px 8px;
+        font-size: 24px;
+      }
+
+      .card a:hover {
+        background: var(--mint);
+      }
+
+      footer {
+        margin-top: 22px;
+        padding: 12px 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 24px;
+      }
+
+      footer a {
+        color: var(--ink);
+      }
+
+      .devtool-easter {
+        position: fixed;
+        right: 14px;
+        bottom: 14px;
+        z-index: 60;
+        width: min(340px, calc(100vw - 22px));
+        border: 4px solid var(--ink);
+        background: #f7ffe9;
+        box-shadow: 8px 8px 0 rgba(16, 35, 63, 0.45);
+        padding: 10px;
+        opacity: 0;
+        transform: translateY(14px) scale(0.96);
+        pointer-events: none;
+        transition:
+          opacity 0.18s steps(2, end),
+          transform 0.18s steps(2, end);
+      }
+
+      body.debug-open .devtool-easter {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+        animation: panelBuzz 3.4s steps(2, end) infinite;
+      }
+
+      .devtool-easter h3 {
+        margin: 0;
+        font-size: 11px;
+        color: #203450;
+      }
+
+      .devtool-easter p {
+        margin: 8px 0 6px;
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      .debug-score {
+        display: inline-block;
+        margin-bottom: 8px;
+        border: 2px solid var(--ink);
+        background: #ffffff;
+        padding: 2px 8px;
+        font-size: 22px;
+      }
+
+      .debug-stage {
+        position: relative;
+        height: 84px;
+        overflow: hidden;
+        border: 3px solid var(--ink);
+        background:
+          repeating-linear-gradient(
+            90deg,
+            rgba(160, 236, 180, 0.28) 0,
+            rgba(160, 236, 180, 0.28) 8px,
+            rgba(255, 255, 255, 0.42) 8px,
+            rgba(255, 255, 255, 0.42) 16px
+          );
+      }
+
+      #debug-bug {
+        position: absolute;
+        top: 26px;
+        left: 10px;
+        border: 3px solid var(--ink);
+        background: var(--accent);
+        color: var(--ink);
+        font-family: "Press Start 2P", monospace;
+        font-size: 10px;
+        padding: 6px 8px 5px;
+      }
+
+      #debug-bug:hover {
+        background: var(--mint);
+      }
+
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.82;
+        }
+
+        50% {
+          opacity: 0.48;
+        }
+      }
+
+      @keyframes scanMove {
+        from {
+          transform: translateY(0);
+        }
+
+        to {
+          transform: translateY(8px);
+        }
+      }
+
+      @keyframes pulseSun {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.04);
+        }
+      }
+
+      @keyframes pulseSunEcho {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.09);
+        }
+      }
+
+      @keyframes ringSpin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes horizonPulse {
+        0%,
+        100% {
+          opacity: 0.55;
+        }
+
+        50% {
+          opacity: 0.88;
+        }
+      }
+
+      @keyframes roadFlow {
+        from {
+          background-position:
+            0 0,
+            0 0;
+        }
+
+        to {
+          background-position:
+            22px 0,
+            0 22px;
+        }
+      }
+
+      @keyframes cityShift {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(2%);
+        }
+      }
+
+      @keyframes windowBlink {
+        0%,
+        22%,
+        64%,
+        100% {
+          opacity: 0.78;
+        }
+
+        35%,
+        48% {
+          opacity: 0.3;
+        }
+      }
+
+      @keyframes carRight {
+        0% {
+          transform: translateX(-20%) scale(var(--car-scale, 1));
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(120vw) scale(var(--car-scale, 1));
+          opacity: 0;
+        }
+      }
+
+      @keyframes carLeft {
+        0% {
+          transform: translateX(120vw) scale(var(--car-scale, 1));
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(-30%) scale(var(--car-scale, 1));
+          opacity: 0;
+        }
+      }
+
+      @keyframes fogRoll {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(9%);
+        }
+      }
+
+      @keyframes dustDrift {
+        0% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+
+        15% {
+          opacity: 0.76;
+        }
+
+        100% {
+          transform: translate(16px, -34px);
+          opacity: 0;
+        }
+      }
+
+      @keyframes ravenFly {
+        from {
+          transform: translateX(0) translateY(0) scale(var(--bird-scale, 1));
+        }
+
+        to {
+          transform: translateX(116vw) translateY(calc(-22px + var(--rise, 0px))) scale(var(--bird-scale, 1));
+        }
+      }
+
+      @keyframes wingLeft {
+        0%,
+        100% {
+          transform: rotate(16deg);
+        }
+
+        50% {
+          transform: rotate(-10deg);
+        }
+      }
+
+      @keyframes wingRight {
+        0%,
+        100% {
+          transform: rotate(-16deg);
+        }
+
+        50% {
+          transform: rotate(10deg);
+        }
+      }
+
+      @keyframes cloudRun {
+        from {
+          transform: translateX(0) scale(var(--cloud-scale, 1));
+        }
+
+        to {
+          transform: translateX(140vw) scale(var(--cloud-scale, 1));
+        }
+      }
+
+      @keyframes cometFly {
+        0% {
+          opacity: 0;
+          transform: translate(0, 0) rotate(-24deg);
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        55% {
+          opacity: 1;
+          transform: translate(-70vw, 30vh) rotate(-24deg);
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate(-88vw, 38vh) rotate(-24deg);
+        }
+      }
+
+      @keyframes planeRight {
+        0% {
+          transform: translateX(-12%) translateY(0) scaleX(var(--plane-dir, 1)) scale(var(--plane-scale, 1));
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 0.84;
+        }
+
+        52% {
+          transform: translateX(56vw) translateY(calc(-10px + var(--plane-rise, 0px))) scaleX(var(--plane-dir, 1)) scale(var(--plane-scale, 1));
+        }
+
+        100% {
+          transform: translateX(124vw) translateY(var(--plane-rise, 0px)) scaleX(var(--plane-dir, 1)) scale(var(--plane-scale, 1));
+          opacity: 0;
+        }
+      }
+
+      @keyframes planeLeft {
+        0% {
+          transform: translateX(124vw) translateY(0) scaleX(var(--plane-dir, 1)) scale(var(--plane-scale, 1));
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 0.84;
+        }
+
+        50% {
+          transform: translateX(54vw) translateY(calc(-11px + var(--plane-rise, 0px))) scaleX(var(--plane-dir, 1)) scale(var(--plane-scale, 1));
+        }
+
+        100% {
+          transform: translateX(-34%) translateY(var(--plane-rise, 0px)) scaleX(var(--plane-dir, 1)) scale(var(--plane-scale, 1));
+          opacity: 0;
+        }
+      }
+
+      @keyframes ufoRight {
+        0% {
+          transform: translateX(-20%) translateY(0) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 0.92;
+        }
+
+        35% {
+          transform: translateX(34vw) translateY(calc(-8px + var(--ufo-rise, 0px))) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+        }
+
+        68% {
+          transform: translateX(78vw) translateY(calc(5px + var(--ufo-rise, 0px))) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+        }
+
+        100% {
+          transform: translateX(124vw) translateY(var(--ufo-rise, 0px)) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+          opacity: 0;
+        }
+      }
+
+      @keyframes ufoLeft {
+        0% {
+          transform: translateX(124vw) translateY(0) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 0.92;
+        }
+
+        36% {
+          transform: translateX(76vw) translateY(calc(7px + var(--ufo-rise, 0px))) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+        }
+
+        70% {
+          transform: translateX(30vw) translateY(calc(-7px + var(--ufo-rise, 0px))) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+        }
+
+        100% {
+          transform: translateX(-30%) translateY(var(--ufo-rise, 0px)) scaleX(var(--ufo-dir, 1)) scale(var(--ufo-scale, 1));
+          opacity: 0;
+        }
+      }
+
+      @keyframes ufoBlink {
+        0%,
+        100% {
+          opacity: 0.25;
+        }
+
+        50% {
+          opacity: 0.95;
+        }
+      }
+
+      @keyframes rise {
+        0% {
+          transform: translateY(0);
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 0.9;
+        }
+
+        100% {
+          transform: translateY(-120vh);
+          opacity: 0;
+        }
+      }
+
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-4px);
+        }
+      }
+
+      @keyframes panelBuzz {
+        0%,
+        100% {
+          box-shadow: 8px 8px 0 rgba(16, 35, 63, 0.45);
+        }
+
+        50% {
+          box-shadow: 10px 10px 0 rgba(16, 35, 63, 0.55);
+        }
+      }
+
+      @media (max-width: 860px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-art {
+          min-height: 240px;
+        }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 12px 10px 20px;
+        }
+
+        .neon-road,
+        .car-lane {
+          display: none;
+        }
+
+        .cityline.back {
+          opacity: 0.32;
+        }
+
+        .fog {
+          opacity: 0.44;
+        }
+
+        .raven.far,
+        .raven.extra,
+        .plane.far,
+        .ufo.far,
+        .sun-ring.ring-two,
+        .sun-mini {
+          display: none;
+        }
+
+        .topbar {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 8px;
+        }
+
+        .top-links {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          font-size: 19px;
+        }
+
+        .top-links a {
+          text-align: center;
+          padding: 4px 6px;
+        }
+
+        .pixel-panel {
+          border-width: 3px;
+          box-shadow: 4px 4px 0 rgba(17, 32, 58, 0.3);
+        }
+
+        h1 {
+          font-size: clamp(14px, 4.2vw, 19px);
+        }
+
+        .subtitle {
+          font-size: 25px;
+        }
+
+        .chip {
+          font-size: 20px;
+        }
+
+        .btn {
+          font-size: 10px;
+          padding: 9px 10px 7px;
+        }
+
+        .projects-head p,
+        .card p,
+        footer {
+          font-size: 22px;
+        }
+
+        .sun-main {
+          width: 94px;
+          height: 94px;
+          top: 10%;
+          left: 72%;
+        }
+
+        .sun-echo {
+          width: 58px;
+          height: 58px;
+          top: 8%;
+          left: 62%;
+        }
+
+        .sun-ring {
+          width: 134px;
+          height: 134px;
+          top: 6%;
+          left: 60%;
+        }
+      }
+
+      @media (max-width: 460px) {
+        .raven,
+        .plane,
+        .cityline.back,
+        .fog.two {
+          display: none;
+        }
+
+        .top-links {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy,
+        .projects {
+          padding: 12px;
+        }
+
+        .subtitle {
+          margin-top: 10px;
+          font-size: 23px;
+        }
+
+        .btn-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .sun-main {
+          width: 78px;
+          height: 78px;
+          left: 68%;
+        }
+
+        .sun-echo,
+        .sun-ring {
+          display: none;
+        }
+
+        .projects-head {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 10px;
+        }
+
+        .devtool-easter {
+          border-width: 3px;
+          box-shadow: 4px 4px 0 rgba(16, 35, 63, 0.4);
+        }
+
+        .devtool-easter p {
+          font-size: 21px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+
+      @media (hover: none) and (pointer: coarse) {
+        body,
+        a,
+        button,
+        .btn,
+        .card a,
+        .top-links a,
+        #debug-bug,
+        [role="button"],
+        input,
+        textarea,
+        select,
+        [contenteditable="true"],
+        button:disabled,
+        [aria-disabled="true"],
+        .is-disabled,
+        a:active,
+        button:active,
+        .btn:active,
+        .card a:active,
+        .top-links a:active,
+        #debug-bug:active,
+        [role="button"]:active {
+          cursor: auto;
+        }
+      }
+    </style>
   </head>
-  <body>
-    hello world
+  <body class="fonts-loading">
+    <div class="bg-scene" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="scan"></div>
+      <div class="sun-ring"></div>
+      <div class="sun-ring ring-two"></div>
+      <div class="sun sun-main"></div>
+      <div class="sun sun-echo"></div>
+      <div class="sun sun-mini"></div>
+      <div class="horizon-glow"></div>
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
+      <div class="cloud c3"></div>
+      <div class="cloud c4"></div>
+      <div class="cloud c5"></div>
+      <div class="comet one"></div>
+      <div class="comet two"></div>
+      <div class="comet three"></div>
+      <div class="ufo right" style="--top:13%; --dur:54s; --delay:-11s; --ufo-scale:0.95; --ufo-rise:1px"></div>
+      <div class="ufo left far" style="--top:25%; --dur:60s; --delay:-27s; --ufo-scale:0.78; --ufo-rise:-2px"></div>
+      <div class="plane right" style="--top:9%; --dur:34s; --delay:-6s; --plane-scale:0.94; --plane-rise:2px"></div>
+      <div class="plane left" style="--top:14%; --dur:38s; --delay:-16s; --plane-scale:0.86; --plane-rise:-2px"></div>
+      <div class="plane right far" style="--top:21%; --dur:41s; --delay:-12s; --plane-scale:0.72; --plane-rise:4px"></div>
+      <div class="plane left extra" style="--top:26%; --dur:36s; --delay:-4s; --plane-scale:0.82; --plane-rise:-4px"></div>
+      <div class="raven" style="--top:22%; --dur:18s; --delay:-3s; --bird-scale:1.05; --flap:0.31s"></div>
+      <div class="raven" style="--top:18%; --dur:22s; --delay:-11s; --bird-scale:0.95; --rise:4px; --flap:0.36s"></div>
+      <div class="raven" style="--top:26%; --dur:20s; --delay:-7s; --bird-scale:1.1; --rise:-2px; --flap:0.3s"></div>
+      <div class="raven far" style="--top:15%; --dur:24s; --delay:-6s; --bird-scale:0.75; --rise:8px; --flap:0.4s"></div>
+      <div class="raven far" style="--top:30%; --dur:19s; --delay:-1s; --bird-scale:0.82; --rise:-6px; --flap:0.33s"></div>
+      <div class="raven" style="--top:12%; --dur:27s; --delay:-15s; --bird-scale:0.7; --rise:10px; --flap:0.42s"></div>
+      <div class="raven" style="--top:34%; --dur:16s; --delay:-9s; --bird-scale:0.92; --rise:-8px; --flap:0.29s"></div>
+      <div class="raven far" style="--top:24%; --dur:21s; --delay:-13s; --bird-scale:0.8; --rise:6px; --flap:0.37s"></div>
+      <div class="raven" style="--top:9%; --dur:26s; --delay:-4s; --bird-scale:0.66; --rise:13px; --flap:0.44s"></div>
+      <div class="raven" style="--top:28%; --dur:17s; --delay:-12s; --bird-scale:1.15; --rise:-10px; --flap:0.27s"></div>
+      <div class="raven far" style="--top:36%; --dur:23s; --delay:-16s; --bird-scale:0.74; --rise:-4px; --flap:0.39s"></div>
+      <div class="raven extra" style="--top:20%; --dur:15s; --delay:-5s; --bird-scale:1.2; --rise:-9px; --flap:0.25s"></div>
+      <div class="raven extra" style="--top:16%; --dur:13s; --delay:-2s; --bird-scale:1.08; --rise:2px; --flap:0.23s"></div>
+      <div class="raven extra" style="--top:32%; --dur:14s; --delay:-8s; --bird-scale:1.04; --rise:-7px; --flap:0.24s"></div>
+      <div class="pixel-float">
+        <span style="--left:4%; --size:8px; --dur:15s; --delay:-1s"></span>
+        <span style="--left:11%; --size:12px; --dur:21s; --delay:-8s"></span>
+        <span style="--left:16%; --size:10px; --dur:17s; --delay:-4s"></span>
+        <span style="--left:24%; --size:7px; --dur:18s; --delay:-6s"></span>
+        <span style="--left:31%; --size:12px; --dur:24s; --delay:-11s"></span>
+        <span style="--left:39%; --size:9px; --dur:16s; --delay:-3s"></span>
+        <span style="--left:48%; --size:11px; --dur:20s; --delay:-9s"></span>
+        <span style="--left:57%; --size:8px; --dur:15s; --delay:-12s"></span>
+        <span style="--left:63%; --size:10px; --dur:19s; --delay:-7s"></span>
+        <span style="--left:71%; --size:9px; --dur:18s; --delay:-5s"></span>
+        <span style="--left:78%; --size:12px; --dur:23s; --delay:-13s"></span>
+        <span style="--left:84%; --size:7px; --dur:16s; --delay:-10s"></span>
+        <span style="--left:91%; --size:11px; --dur:22s; --delay:-2s"></span>
+        <span style="--left:96%; --size:8px; --dur:17s; --delay:-14s"></span>
+      </div>
+      <div class="car-lane upper">
+        <div class="car right" style="--car-body:#ff8a8a; --car-top:#ffd147; --dur:14s; --delay:-3s; --car-scale:0.9"></div>
+        <div class="car left" style="--car-body:#9be3ff; --car-top:#5e86ff; --dur:17s; --delay:-9s; --car-scale:0.8"></div>
+        <div class="car right" style="--car-body:#77f3ab; --car-top:#3bd487; --dur:19s; --delay:-12s; --car-scale:0.85"></div>
+      </div>
+      <div class="car-lane lower">
+        <div class="car left" style="--car-body:#ffafd7; --car-top:#ff8a8a; --dur:15s; --delay:-5s; --car-scale:1"></div>
+        <div class="car right" style="--car-body:#ffe49a; --car-top:#ffb347; --dur:18s; --delay:-11s; --car-scale:0.95"></div>
+        <div class="car left" style="--car-body:#b4b9ff; --car-top:#8188ff; --dur:20s; --delay:-14s; --car-scale:0.88"></div>
+      </div>
+      <div class="neon-road"></div>
+      <div class="cityline back"></div>
+      <div class="cityline front"></div>
+      <div class="dust-layer">
+        <span style="--left:6%; --size:4px; --dur:7.5s; --delay:-1s"></span>
+        <span style="--left:13%; --size:3px; --dur:9.1s; --delay:-4s"></span>
+        <span style="--left:24%; --size:2px; --dur:8.3s; --delay:-3s"></span>
+        <span style="--left:31%; --size:3px; --dur:10.2s; --delay:-6s"></span>
+        <span style="--left:44%; --size:4px; --dur:8.9s; --delay:-2s"></span>
+        <span style="--left:52%; --size:2px; --dur:11.4s; --delay:-7s"></span>
+        <span style="--left:61%; --size:3px; --dur:7.8s; --delay:-5s"></span>
+        <span style="--left:72%; --size:2px; --dur:10.6s; --delay:-8s"></span>
+        <span style="--left:79%; --size:4px; --dur:9.7s; --delay:-4s"></span>
+        <span style="--left:86%; --size:3px; --dur:8.5s; --delay:-6s"></span>
+        <span style="--left:93%; --size:2px; --dur:11.1s; --delay:-9s"></span>
+      </div>
+      <div class="fog"></div>
+      <div class="fog two"></div>
+      <div class="hills"></div>
+    </div>
+
+    <div class="page">
+      <header class="topbar pixel-panel">
+        <div class="logo">OLEH PIXEL HUB</div>
+        <nav class="top-links">
+          <a href="#projects">Projects</a>
+          <a href="https://github.com/olehsmazhnov" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/oleh-s/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy pixel-panel">
+          <h1>WELCOME TO MY</h1>
+          <h1>PROJECT ARCADE</h1>
+          <p class="subtitle">
+            10+ years in enterprise and business app development.<br>
+            Web, web-services, client-server systems, and games.<br>
+            React, Ionic, Haxe/OpenFL, Phaser, LibGDX, Google/FB/ExactTarget integrations.
+          </p>
+          <div class="profile-strip">
+            <span class="chip">NAME: OLEH S.</span>
+            <span class="chip">EXPERIENCE: 10+ YEARS</span>
+            <span class="chip">
+              LINKEDIN:
+              <a href="https://www.linkedin.com/in/oleh-s/" target="_blank" rel="noreferrer">/in/oleh-s</a>
+            </span>
+            <span class="chip">DOMAIN: ENTERPRISE + GAMES</span>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects">VIEW PROJECTS</a>
+            <a class="btn btn-secondary" href="https://github.com/olehsmazhnov" target="_blank" rel="noreferrer">MY PROFILE</a>
+          </div>
+        </div>
+
+        <div class="hero-art pixel-panel" aria-hidden="true">
+          <img class="avatar" src="assets/avatar-pixel.png" alt="Pixel portrait of Oleh">
+        </div>
+      </section>
+
+      <section class="projects pixel-panel" id="projects">
+        <div class="projects-head">
+          <h2>PROJECT SELECT</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="card">
+            <div class="card-banner banner-1"></div>
+            <h3>CURRENCY CONVERTOR</h3>
+            <p>Chrome extension for quick currency conversion in-browser.</p>
+            <a href="https://chromewebstore.google.com/detail/currency-convertor/aochdhmagmlmfnkfkaepjmfdhbbdplpm" target="_blank" rel="noreferrer" aria-label="Open Currency Convertor on Chrome Web Store">Open</a>
+          </article>
+
+          <!--
+          <article class="card">
+            <div class="card-banner banner-2"></div>
+            <h3>PROJECT 02</h3>
+            <p>Another build with a cool one-line summary.</p>
+            <a href="#" aria-label="Open project 02">Open</a>
+          </article>
+          -->
+
+          <!--
+          <article class="card">
+            <div class="card-banner banner-3"></div>
+            <h3>PROJECT 03</h3>
+            <p>Drop your best demo, game, or app here.</p>
+            <a href="#" aria-label="Open project 03">Open</a>
+          </article>
+          -->
+
+          <!--
+          <article class="card">
+            <div class="card-banner banner-4"></div>
+            <h3>PROJECT 04</h3>
+            <p>Something experimental? This slot is ready.</p>
+            <a href="#" aria-label="Open project 04">Open</a>
+          </article>
+          -->
+        </div>
+      </section>
+
+      <footer class="pixel-panel">
+        <span>Made by AI</span>
+        <span>
+          <a href="https://github.com/olehsmazhnov" target="_blank" rel="noreferrer">github.com/olehsmazhnov</a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/oleh-s/" target="_blank" rel="noreferrer">linkedin.com/in/oleh-s</a>
+        </span>
+      </footer>
+    </div>
+
+    <aside class="devtool-easter" id="devtool-easter" aria-live="polite">
+      <h3>DEBUG DUNGEON UNLOCKED</h3>
+      <p id="devtool-joke">You opened DevTools. Respect.</p>
+      <span class="debug-score">Bugs Caught: <strong id="debug-score">0</strong></span>
+      <div class="debug-stage" id="debug-stage">
+        <button type="button" id="debug-bug">CATCH BUG</button>
+      </div>
+    </aside>
+
+    <script>
+      (() => {
+        const jokes = [
+          "Nice. Looking for my secrets?",
+          "Careful: this code bites back.",
+          "console.log is my cardio.",
+          "Breakpoints are just speed bumps.",
+          "You found debug mode. Loot +10."
+        ];
+
+        const jokeEl = document.getElementById("devtool-joke");
+        const scoreEl = document.getElementById("debug-score");
+        const stageEl = document.getElementById("debug-stage");
+        const bugBtn = document.getElementById("debug-bug");
+
+        if (!jokeEl || !scoreEl || !stageEl || !bugBtn) {
+          return;
+        }
+
+        let isOpen = false;
+        let jokeIndex = 0;
+        let score = 0;
+        let jokeTimer = null;
+
+        function renderJoke() {
+          jokeEl.textContent = jokes[jokeIndex];
+        }
+
+        function nextJoke() {
+          jokeIndex = (jokeIndex + 1) % jokes.length;
+          renderJoke();
+        }
+
+        function moveBug() {
+          const maxX = Math.max(0, stageEl.clientWidth - bugBtn.offsetWidth - 4);
+          const maxY = Math.max(0, stageEl.clientHeight - bugBtn.offsetHeight - 4);
+          const x = Math.floor(Math.random() * (maxX + 1));
+          const y = Math.floor(Math.random() * (maxY + 1));
+
+          bugBtn.style.left = x + "px";
+          bugBtn.style.top = y + "px";
+        }
+
+        function setOpen(open) {
+          if (open === isOpen) {
+            return;
+          }
+
+          isOpen = open;
+          document.body.classList.toggle("debug-open", open);
+
+          if (open) {
+            renderJoke();
+            moveBug();
+            if (!jokeTimer) {
+              jokeTimer = setInterval(nextJoke, 2400);
+            }
+            console.log(
+              "%cDebug dungeon unlocked. Catch the bug button.",
+              "background:#10233f;color:#77f3ab;padding:4px 6px;font-weight:bold;"
+            );
+          } else if (jokeTimer) {
+            clearInterval(jokeTimer);
+            jokeTimer = null;
+          }
+        }
+
+        function detectDevTools() {
+          const threshold = 160;
+          const widthGap = window.outerWidth - window.innerWidth;
+          const heightGap = window.outerHeight - window.innerHeight;
+          const open = widthGap > threshold || heightGap > threshold;
+          setOpen(open);
+        }
+
+        bugBtn.addEventListener("click", () => {
+          score += 1;
+          scoreEl.textContent = String(score);
+          nextJoke();
+          moveBug();
+        });
+
+        window.addEventListener("resize", detectDevTools);
+        window.setInterval(detectDevTools, 1000);
+        detectDevTools();
+      })();
+    </script>
+    <script>
+      (() => {
+        const reveal = () => document.body.classList.remove("fonts-loading");
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(reveal);
+          setTimeout(reveal, 2500);
+        } else {
+          setTimeout(reveal, 400);
+        }
+      })();
+    </script>
   </body>
 </html>
